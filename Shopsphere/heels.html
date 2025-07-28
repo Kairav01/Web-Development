@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere - Luxury Heels</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .products-container {
+            padding: 100px 5% 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #f0f0f0;
+        }
+
+        .product-description {
+            color: #cccccc;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, #ff6b6b, #6b47ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .buy-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="categories.html">← Back to Categories</a>
+        <a href="shopsphere.html">Home</a>
+    </nav>
+
+    <div class="products-container">
+        <div class="product-card">
+            <img src="https://www.charlotteolympia.com/cdn/shop/products/CO_AW23_ECOMM_BOSSY_105_BLACK_SUEDE_FRONT_2048x2048.jpg" alt="Classic Stiletto" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Elegant Stiletto</h2>
+                <p class="product-description">Timeless black suede stiletto with pointed toe and 4-inch heel. Perfect for formal occasions.</p>
+                <div class="product-price">₹12,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.manoloblahnik.com/media/catalog/product/cache/1/thumbnail/1200x/040ec09b1e35df139433887a97daa66f/5/0/50999999999992_01_1.jpg" alt="Designer Pump" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Crystal Embellished Pump</h2>
+                <p class="product-description">Luxurious satin pump with crystal embellishments and 3.5-inch heel. Ideal for special events.</p>
+                <div class="product-price">₹24,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.loefflerrandall.com/cdn/shop/products/natalie-pearl-heel-sandal-pearl-1_1800x1800.jpg" alt="Pearl Sandal" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Pearl Elegance</h2>
+                <p class="product-description">Sophisticated sandal with pearl detailing and ankle strap. Features a comfortable 3-inch block heel.</p>
+                <div class="product-price">₹18,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.jimmychoo.com/dw/image/v2/BDNT_PRD/on/demandware.static/-/Sites-jch-master-product-catalog/default/dw11b86f84/images/original/ROMY100ADO_000074_SIDE.jpg" alt="Gold Heel" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Golden Glamour</h2>
+                <p class="product-description">Metallic gold leather pump with pointed toe and slim 4-inch heel. Perfect for evening events.</p>
+                <div class="product-price">₹21,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.valentino.com/variants/images/1647597286824251/F/w750.jpg" alt="Platform Heel" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Platform Paradise</h2>
+                <p class="product-description">Statement platform heel with ankle strap. Features 5-inch heel with 1-inch platform for stability.</p>
+                <div class="product-price">₹19,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.louboutin.com/media/catalog/product/3/2/3220525BK01_1_1200x1200_1675957353.jpg" alt="Red Bottom" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Classic Red Sole</h2>
+                <p class="product-description">Iconic black patent leather pump with signature red sole. Features 4-inch stiletto heel.</p>
+                <div class="product-price">₹45,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.stuartweitzman.com/dw/image/v2/AAHO_PRD/on/demandware.static/-/Sites-sw-master-catalog/default/dw8b99ad78/images/zoom/NUDISTTRADITIONAL_S1025_BLACK-SUEDE_01.jpg" alt="Strappy Sandal" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Minimalist Strappy</h2>
+                <p class="product-description">Elegant strappy sandal in black suede. Features delicate ankle strap and 3.5-inch heel.</p>
+                <div class="product-price">₹16,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.sergiorossi.com/dw/image/v2/BCKJ_PRD/on/demandware.static/-/Sites-sergiorossi-master-catalog/default/dw8b99ad78/images/SR1/pumps/A43843-MMVR13_2080_01.jpg" alt="Slingback" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Chic Slingback</h2>
+                <p class="product-description">Sophisticated slingback pump in nude leather. Features 3-inch kitten heel and pointed toe.</p>
+                <div class="product-price">₹22,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.gianvitorossi.com/media/catalog/product/cache/1/thumbnail/1200x/040ec09b1e35df139433887a97daa66f/G/6/G61698_01_1.jpg" alt="Mule" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Luxury Mule</h2>
+                <p class="product-description">Elegant slip-on mule in metallic leather. Features 3.5-inch heel and pointed toe design.</p>
+                <div class="product-price">₹26,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

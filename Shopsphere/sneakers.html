@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere - Premium Sneakers</title>
+    <style>
+        /* Using the same styling as tuxedos.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .products-container {
+            padding: 100px 5% 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #f0f0f0;
+        }
+
+        .product-description {
+            color: #cccccc;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, #ff6b6b, #6b47ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .buy-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="categories.html">← Back to Categories</a>
+        <a href="shopsphere.html">Home</a>
+    </nav>
+
+    <div class="products-container">
+        <div class="product-card">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1fe8a904-5de6-4450-91c1-5b90a8ae9d96/air-jordan-1-retro-high-og-shoes-Pz6fZ9.png" alt="Air Jordan 1" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Air Jordan 1 Retro High</h2>
+                <p class="product-description">Iconic basketball sneaker with premium leather and classic colorway. Features Air cushioning and high-top design.</p>
+                <div class="product-price">₹16,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/09c5ea6df1bd4be6baaaac5e003e7047_9366/Forum_Low_Shoes_White_FY7756_01_standard.jpg" alt="Adidas Forum" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Adidas Forum Low</h2>
+                <p class="product-description">Classic basketball-inspired sneaker with premium leather upper and signature strap design. Perfect for street style.</p>
+                <div class="product-price">₹12,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/5fe37c78-823b-4cc9-9b33-c67eec21736b/dunk-low-shoes-t4Rq0C.png" alt="Nike Dunk" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Nike Dunk Low</h2>
+                <p class="product-description">Timeless silhouette with clean lines and classic colorways. Features durable leather construction and padded collar.</p>
+                <div class="product-price">₹11,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c0958422af1b4be28293af5600ac043e_9366/ULTRABOOST_LIGHT_White_HQ6338_01_standard.jpg" alt="Ultraboost" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Adidas Ultraboost</h2>
+                <p class="product-description">Premium running shoe with responsive Boost cushioning and Primeknit upper. Offers supreme comfort and style.</p>
+                <div class="product-price">₹19,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/71a804c7-9a91-4bc4-98a5-0114d0c3c1f7/air-force-1-07-shoes-WrLlWX.png" alt="Air Force 1" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Nike Air Force 1</h2>
+                <p class="product-description">Legendary street style sneaker with premium leather construction. Features Air cushioning and durable cupsole.</p>
+                <div class="product-price">₹9,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e725107b0b9847728e6caf7900e3b0bc_9366/Superstar_Shoes_White_GX9876_01_standard.jpg" alt="Superstar" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Adidas Superstar</h2>
+                <p class="product-description">Iconic shell-toe design with classic three stripes. Features full-grain leather upper and rubber outsole.</p>
+                <div class="product-price">₹8,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/17c9cb39-4723-45e5-a8eb-f6e846bb1bd7/air-max-90-shoes-kRsBnD.png" alt="Air Max 90" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Nike Air Max 90</h2>
+                <p class="product-description">Retro running silhouette with visible Air cushioning. Features mixed-material upper and waffle outsole.</p>
+                <div class="product-price">₹12,499</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1350,h_1350/global/389983/01/sv01/fnd/IND/fmt/png/Slipstream-Lo-Sneakers" alt="Puma Slipstream" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Puma Slipstream</h2>
+                <p class="product-description">Retro-inspired basketball sneaker with modern comfort features. Premium leather upper with signature formstrip.</p>
+                <div class="product-price">₹8,499</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/68ae7ea7849b43eca70aac1e00f5146d_9366/NMD_R1_Shoes_Black_GZ9256_01_standard.jpg" alt="NMD R1" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Adidas NMD R1</h2>
+                <p class="product-description">Modern streetwear icon with Boost technology and Primeknit construction. Features distinctive midsole plugs and sock-like fit.</p>
+                <div class="product-price">₹14,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

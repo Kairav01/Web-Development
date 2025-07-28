@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere - Luxury Watches</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .products-container {
+            padding: 100px 5% 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #f0f0f0;
+        }
+
+        .product-description {
+            color: #cccccc;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, #ff6b6b, #6b47ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .buy-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="categories.html">← Back to Categories</a>
+        <a href="shopsphere.html">Home</a>
+    </nav>
+
+    <div class="products-container">
+        <div class="product-card">
+            <img src="https://www.rolex.com/media/catalog/product/cache/1/thumbnail/9df78eab33525d08d6e5fb8d27136e95/m/1/m126711chnr-0002_modelpage_front_facing_landscape.png" alt="GMT Master" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">GMT-Master II</h2>
+                <p class="product-description">Iconic dual time zone watch in Everose gold and steel with black ceramic bezel. Features automatic movement and 70-hour power reserve.</p>
+                <div class="product-price">₹12,95,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.omegawatches.com/media/catalog/product/cache/a5c37fddc1a529a1a44fea55d527b9a116f3738da3a2cc38006fcc613c37c391/o/m/omega-seamaster-diver-300m-21030422001001-l.png" alt="Seamaster" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Seamaster Professional</h2>
+                <p class="product-description">Professional diving watch with blue ceramic dial and bezel. Water-resistant to 300m with Co-Axial Master Chronometer movement.</p>
+                <div class="product-price">₹5,45,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.cartier.com/variants/images/44733502651435015/img1/w400.jpg" alt="Tank Watch" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Tank Must</h2>
+                <p class="product-description">Elegant rectangular case in 18k yellow gold with leather strap. Features automatic movement and sapphire crystal.</p>
+                <div class="product-price">₹7,85,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR00405/importer/standup.png" alt="Royal Oak" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Royal Oak</h2>
+                <p class="product-description">Iconic octagonal design in stainless steel with tapisserie dial. Features in-house automatic movement and integrated bracelet.</p>
+                <div class="product-price">₹32,95,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.patek.com/resources/img/products/face/300/5711_1A_011.jpg" alt="Nautilus" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Nautilus</h2>
+                <p class="product-description">Legendary sports watch in stainless steel with blue dial. Features automatic movement and date display.</p>
+                <div class="product-price">₹75,95,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.iwc.com/content/dam/rcq/iwc/19/51/69/1/1951691.png" alt="Pilot Watch" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Pilot's Chronograph</h2>
+                <p class="product-description">Professional pilot's watch with chronograph function. Features automatic movement and anti-magnetic protection.</p>
+                <div class="product-price">₹6,45,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.jaeger-lecoultre.com/sites/default/files/styles/crop_enzyme_1_1/public/2023-03/reverso-tribute-small-seconds-model-banner-1.jpg" alt="Reverso" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Reverso Classic</h2>
+                <p class="product-description">Art Deco inspired reversible case in steel. Features manual-winding movement and dual faces.</p>
+                <div class="product-price">₹8,25,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.panerai.com/content/dam/rcq/pan/22/58/33/8/2258338.png" alt="Luminor" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Luminor Marina</h2>
+                <p class="product-description">Distinctive cushion case with signature crown guard. Features automatic movement and luminous dial.</p>
+                <div class="product-price">₹7,95,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dw4b656476/TAG_Heuer_Monaco/CAW211P.FC6356/CAW211P.FC6356_1.png" alt="Monaco" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Monaco Chronograph</h2>
+                <p class="product-description">Square chronograph watch with racing heritage. Features automatic movement and sapphire crystal.</p>
+                <div class="product-price">₹5,95,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

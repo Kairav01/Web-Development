@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere - Luxury Handbags</title>
+    <style>
+        /* Same styling as tuxedos.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .products-container {
+            padding: 100px 5% 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #f0f0f0;
+        }
+
+        .product-description {
+            color: #cccccc;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, #ff6b6b, #6b47ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .buy-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="categories.html">← Back to Categories</a>
+        <a href="shopsphere.html">Home</a>
+    </nav>
+
+    <div class="products-container">
+        <div class="product-card">
+            <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1686834614/726875_UCLXX_1000_001_057_0000_Light-GG-Marmont-small-shoulder-bag.jpg" alt="Classic Shoulder Bag" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Marmont Elegance</h2>
+                <p class="product-description">Luxurious quilted leather shoulder bag with signature hardware and chain strap. Perfect for day to evening wear.</p>
+                <div class="product-price">₹1,85,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.chanel.com/images/t_one///q_auto:good,f_auto,fl_lossy,dpr_1.2/w_1240/classic-handbag-black-grained-calfskin-gold-tone-metal-grained-calfskin-gold-tone-metal-packshot-default-a01112y01864c3906-8855184760862.jpg" alt="Classic Flap" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Timeless Classic</h2>
+                <p class="product-description">Iconic quilted leather flap bag with signature turn-lock closure and leather-interwoven chain strap.</p>
+                <div class="product-price">₹2,45,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-onthego-mm-monogram-empreinte-leather-handbags--M46119_PM2_Front%20view.jpg" alt="Tote Bag" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Monogram Tote</h2>
+                <p class="product-description">Spacious tote in embossed leather with iconic monogram pattern. Features dual carrying options.</p>
+                <div class="product-price">₹1,95,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.prada.com/content/dam/pradabkg_products/1/1BA/1BA354/2ERXF0002/1BA354_2ERX_F0002_V_OOO_SLF.jpg" alt="Saffiano Bag" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Saffiano Luxury</h2>
+                <p class="product-description">Elegant structured bag in scratch-resistant Saffiano leather with metal hardware detailing.</p>
+                <div class="product-price">₹1,65,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.dior.com/couture/ecommerce/media/catalog/product/V/p/1686824534_M0505OWZQ_M41G_E01_GH.jpg" alt="Lady Bag" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Lady Elegance</h2>
+                <p class="product-description">Sophisticated structured bag with iconic cannage quilting and decorative charms.</p>
+                <div class="product-price">₹2,15,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.hermes.com/sites/default/files/styles/product_image_desktop_1x/public/2023-11/CAT_IMG_1_BIRKIN_25_TOGO_GOLD_GHW_1.jpg" alt="Luxury Tote" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Heritage Tote</h2>
+                <p class="product-description">Handcrafted leather tote with palladium hardware and signature lock closure system.</p>
+                <div class="product-price">₹8,95,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.ysl.com/dw/image/v2/BFXY_PRD/on/demandware.static/-/Sites-sslp-master-catalog/default/dw114d3ba7/images/large/809437050_F.jpg" alt="Crossbody Bag" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Chic Crossbody</h2>
+                <p class="product-description">Versatile crossbody bag with adjustable strap and signature YSL monogram hardware.</p>
+                <div class="product-price">₹1,45,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.bottegaveneta.com/variants/images/17411127375812059/F/w1500.jpg" alt="Woven Leather" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Intrecciato Dream</h2>
+                <p class="product-description">Signature woven leather hobo bag with minimalist design and magnetic closure.</p>
+                <div class="product-price">₹2,35,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.celine.com/dw/image/v2/BBST_PRD/on/demandware.static/-/Sites-masterCatalog/default/dwd3da5a68/images/large/187373BF4.38NO_1_FRONTWORN.jpg" alt="Classic Box" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Classic Box Bag</h2>
+                <p class="product-description">Timeless box bag in smooth calfskin leather with distinctive closure and adjustable strap.</p>
+                <div class="product-price">₹1,75,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere - Luxury Tuxedos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .products-container {
+            padding: 100px 5% 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #f0f0f0;
+        }
+
+        .product-description {
+            color: #cccccc;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, #ff6b6b, #6b47ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .buy-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="categories.html">← Back to Categories</a>
+        <a href="shopsphere.html">Home</a>
+    </nav>
+
+    <div class="products-container">
+        <!-- Updated and existing products -->
+        <div class="product-card">
+            <img src="https://images.pexels.com/photos/3613388/pexels-photo-3613388.jpeg" alt="Classic Black Tuxedo" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">The Classic Noir</h2>
+                <p class="product-description">Timeless black wool tuxedo with satin lapels. Perfect for formal events and weddings.</p>
+                <div class="product-price">₹1,07,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Additional tuxedos -->
+        <div class="product-card">
+            <img src="https://images.pexels.com/photos/1342609/pexels-photo-1342609.jpeg" alt="White Tuxedo" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Pearl White Elite</h2>
+                <p class="product-description">Stunning white tuxedo with black satin details. Perfect for summer weddings.</p>
+                <div class="product-price">₹1,41,999</div> <!-- Pearl White Elite -->
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.comercialmoyano.com/6177-thickbox_default/-groomswear-baroque-suit-coat-of-time-jacquard-gray-and-black-with-pointed-lapels-1594.jpg" alt="Patterned Tuxedo" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Baroque Pattern</h2>
+                <p class="product-description">Elegant patterned tuxedo with intricate designs. Stand out at any formal event.</p>
+                <div class="product-price">₹1,82,999</div> <!-- Baroque Pattern -->
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.pexels.com/photos/1321943/pexels-photo-1321943.jpeg" alt="Modern Fit Tuxedo" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Contemporary Slim</h2>
+                <p class="product-description">Modern slim-fit tuxedo in charcoal grey. Perfect for the fashion-forward gentleman.</p>
+                <div class="product-price">₹1,32,999</div> <!-- Contemporary Slim -->
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://cdn.hangrr.com/v7/s3/product/474/royal-cruise-ivory-tuxedo-multi.webp" alt="White Dinner Jacket" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Ivory Excellence</h2>
+                <p class="product-description">Elegant ivory dinner jacket with black trim. Ideal for summer formal events.</p>
+                <div class="product-price">₹1,24,999</div> <!-- Ivory Excellence -->
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Midnight Blue Tuxedo" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Midnight Azure</h2>
+                <p class="product-description">Sophisticated midnight blue tuxedo with peak lapels. A modern twist on classic formal wear.</p>
+                <div class="product-price">₹1,32,999</div> <!-- Midnight Azure -->
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy8RlL_ElTzlb7QCMJ-9QmC4JnJ63_pvumOQ&s" alt="Velvet Burgundy Tuxedo" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Velvet Burgundy</h2>
+                <p class="product-description">Luxurious burgundy velvet tuxedo. Make a statement at any formal gathering.</p>
+                <div class="product-price">₹1,49,999</div> <!-- Velvet Burgundy -->
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0" alt="Slim Fit Grey Tuxedo" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Modern Slate</h2>
+                <p class="product-description">Contemporary slim-fit grey tuxedo. Perfect for the modern gentleman.</p>
+                <div class="product-price">₹1,16,999</div> <!-- Modern Slate -->
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1555069519-127aadedf1ee" alt="Double Breasted Tuxedo" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Royal Double</h2>
+                <p class="product-description">Double-breasted black tuxedo with wide peak lapels. The epitome of luxury.</p>
+                <div class="product-price">₹1,57,999</div> <!-- Royal Double -->
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

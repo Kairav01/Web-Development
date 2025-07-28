@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere - Luxury Sarees</title>
+    <style>
+        /* Using the same styling as tuxedos.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .products-container {
+            padding: 100px 5% 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #f0f0f0;
+        }
+
+        .product-description {
+            color: #cccccc;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, #ff6b6b, #6b47ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .buy-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="categories.html">← Back to Categories</a>
+        <a href="shopsphere.html">Home</a>
+    </nav>
+
+    <div class="products-container">
+        <div class="product-card">
+            <img src="https://global.karagiri.com/cdn/shop/products/KAIROSSILK-258002_3_eccd9a6c-dd97-404e-9c48-6d0d751ca60c.jpg?v=1674207472&width=1200" alt="Kanjivaram Silk Saree" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Royal Kanjivaram</h2>
+                <p class="product-description">Traditional Kanjivaram silk saree with intricate zari work and rich pallu design.</p>
+                <div class="product-price">₹74,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://moolchandmill.com/cdn/shop/files/01_ba70c7de-8f6b-4444-84d6-ccb631dce215.jpg?v=1732861554&width=1260" alt="Banarasi Silk Saree" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Banarasi Heritage</h2>
+                <p class="product-description">Luxurious Banarasi silk saree with golden motifs and elaborate border work.</p>
+                <div class="product-price">₹1,08,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://cdn.shopify.com/s/files/1/1732/6543/files/PeachPinkBridalLehengaPakistaniWeddingDresses_1800x1800_91386f37-8e45-419f-9443-862eee4a0341_480x480.webp?v=1690522244" alt="Designer Georgette Saree" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Modern Fusion</h2>
+                <p class="product-description">Contemporary georgette saree with designer prints and subtle embellishments.</p>
+                <div class="product-price">₹49,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgUTxsiN2ybXiH9iHqmMACkeP5b_PeXISfJQ&s" alt="Bridal Silk Saree" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Bridal Elegance</h2>
+                <p class="product-description">Exquisite bridal silk saree with heavy zari work and stone embellishments.</p>
+                <div class="product-price">₹1,24,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKB0vCDc5ln0pBbvqSO13EmACswHxLEek8Kw&s" alt="Organza Saree" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Ethereal Organza</h2>
+                <p class="product-description">Light and airy organza saree with delicate floral embroidery.</p>
+                <div class="product-price">₹66,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://zaribanaras.com/cdn/shop/files/1_0e454fcd-58dc-4ae9-8ed7-f87299edf6a8_1024x1024.jpg?v=1685191076" alt="Patola Silk Saree" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Patola Heritage</h2>
+                <p class="product-description">Traditional Patola silk saree with geometric patterns and rich border.</p>
+                <div class="product-price">₹99,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Ngt6wlXcvQPbFt7yrdW0_A0GHH7YrDcXXg&s" alt="Chiffon Designer Saree" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Contemporary Chic</h2>
+                <p class="product-description">Modern chiffon saree with contemporary prints and minimal design.</p>
+                <div class="product-price">₹58,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSrwo90cdGi_wHXhXfVLt6AyELkNyYF28vuA&s" alt="Tussar Silk Saree" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Tussar Classic</h2>
+                <p class="product-description">Natural tussar silk saree with traditional motifs and temple border.</p>
+                <div class="product-price">₹62,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9IVMEmWhx8ILk9SYNi8X_OVr77G4Q6vIN_g&s" alt="Chanderi Silk Saree" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Chanderi Grace</h2>
+                <p class="product-description">Lightweight Chanderi silk saree with zari border and bootis.</p>
+                <div class="product-price">₹62,999</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
